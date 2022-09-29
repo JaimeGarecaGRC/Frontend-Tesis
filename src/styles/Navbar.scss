@@ -1,0 +1,44 @@
+@import 'vars';
+
+nav{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
+}
+
+.logo{
+    width: 140px;
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.navbar-center{
+    justify-self: center;
+}
+
+.consult-input{
+    height: 45px;
+    width: 25vw;
+    border-radius: 8px;
+
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-right a img{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.navbar-right a:nth-child(3) img{
+    width: 60px;
+    margin-right: 10px;
+
+}   

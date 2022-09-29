@@ -1,0 +1,5 @@
+body{
+    background: linear-gradient(to right, var(--primaryBlue), var(--secondaryBlue));
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+}
