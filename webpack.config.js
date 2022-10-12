@@ -23,11 +23,22 @@ module.exports = {
     resolve: {
         //Le indicamos las extensiones que se trabajaran dentro del proyecto
         extensions: ['.js','.jsx'],
+        alias: {
+            '@components': path.resolve(__dirname, 'src/components/'),
+            '@containers': path.resolve(__dirname, 'src/containers/'),
+            '@logos': path.resolve(__dirname,'src/assets/logos/'),
+            '@icons': path.resolve(__dirname,'src/assets/icons/'),
+            '@styles': path.resolve(__dirname, 'src/styles/')
+        },
     },
     //Aqui trabajamos las reglas que crearemos con los louders y el uso de plugins.
     module: {
         //Son reglas que aplican en el proyecto
         rules: [
+            {
+                test: /\.(svg|png|jpg|gif|pdf)$/,
+                type: 'asset',
+            },
             {
                 //Es una regla con un Regex que nos permite probar cuales elemenos vamos a estar trabajando
                 test: /\.(js|jsx)$/,
@@ -48,13 +59,15 @@ module.exports = {
 //THIS IS NEW
             {
                 //Agregamos las rules para el CSS, [ac] indica que puede ser a o c las letras que puede haber ahi
-                test: /\.(css|scss)$/i,
+                test: /\.(css|scss)$/,
                 use:[
                     "style-loader",
                     "css-loader",
-                    "sass-loader",
+                    "sass-loader"
                 ], 
             }
+                //Regla para que se puedan usar imagenes que esten dentro del proyecto
+
         ]
     },
     plugins: [
@@ -80,7 +93,7 @@ module.exports = {
         //Nos permite saber donde esta trabajando nuestro proyecto
         static: {
             directory: path.join(__dirname, "./")
-          },
+        },
         //Puerto que usaremos
         port: 3005, 
     }

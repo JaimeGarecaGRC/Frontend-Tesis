@@ -1,0 +1,43 @@
+@import 'vars';
+
+.sidebar-container{
+    position: absolute;
+    height: 854px;
+    left: 0;   
+    z-index: 1;
+}
+
+.menu-left-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-left-container p{
+    color: var(--gray);
+    text-align: center;
+}
+
+.menu-left-container a{
+    padding: 18px 30px;
+    border-style: solid;
+    border-color: var(--neutralBlue);
+    text-decoration: none;
+    border-collapse: collapse;   
+    border-width: 0px;
+    border-right-width: 6px;      
+}
+
+.menu-left-container hr{
+    background-color: var(--neutralBlue);
+    width: 170px;
+    height: 6px;
+    margin: 0;
+    border: 0;
+}
+
+.closebar{
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

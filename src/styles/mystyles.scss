@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import '~bulma/bulma.sass';
+
+$footer-background-color: black;
+$footer-color: white;
+$footer-padding: 3rem 1.5rem 6rem;
+
+.footer{
+   background-color: $footer-background-color ;
+   color: $footer-color;
+   padding: $footer-padding;
+   bottom: 0;
+}
+

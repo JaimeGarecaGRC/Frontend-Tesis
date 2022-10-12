@@ -1,0 +1,36 @@
+@import 'vars';
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;  
+}
+
+.resultado h2{
+    font-size: var(--bg);
+    
+}
+
+.resultado h3{
+    font-size: var(--md);
+    margin-left: 12vw;
+}
+
+.resultado p{
+    margin-left: 1vw;
+    padding-top: 5px;
+    font-size: var(--sm);
+}
+.busqueda-resultado-container{
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+.busqueda-resultado-container hr{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryBlue);
+    margin: 20px 25vw;
+    height: 5px;
+    border: 0          
+}

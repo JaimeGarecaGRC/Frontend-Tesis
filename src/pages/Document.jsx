@@ -3,11 +3,18 @@ import Header from '../containers/Header';
 import Sidebar from '../components/Sidebar';
 import Title from '../components/Title';
 import Footer from '../containers/footer';
+import WatchArticle from '../containers/WatchArticle';
 
-const Home = () => {
+const Document = () => {
     return (
-        <><Header /><Sidebar /><Title /><Footer/> </>  
+    <> 
+        <Header />
+        <Sidebar />
+        <Title />
+        <WatchArticle />
+        <Footer/> 
+    </>  
     );
 }
 
-export default Home;
+export default Document;
