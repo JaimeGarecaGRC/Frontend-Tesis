@@ -1,14 +1,15 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState} from 'react';
+import { Link, useParams } from 'react-router-dom';
 import useGetArticle from '../hooks/useGetArticle';
 import useGetContent from '../hooks/useGetContent';
 
-
 const WatchArticle =  () => {
-    
-    const article = useGetArticle("//localhost:3010/api/v1/articles/1");
 
-    console.log(article);
+    const prueba = useParams();
+    console.log(prueba);
+
+    const article = useGetArticle(`//localhost:3010/api/v1/articles/${prueba.articleId}`);
 
     return (
         <div className='columns'>

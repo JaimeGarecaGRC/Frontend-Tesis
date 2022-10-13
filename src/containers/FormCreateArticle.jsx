@@ -78,7 +78,7 @@ const FormCreateArticle = () => {
                         {/* 
                             has-icons-left has-icons-right
                         <span className="icon is-small is-left">
-                            <i className="fas fa-user"></i>
+                            <i className="fas fa-user"></i>     
                         </span> */}
                     </div>
                 </div>

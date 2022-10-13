@@ -3,6 +3,8 @@ import React from 'react';
 import '../styles/ResultSearch.scss'
 
 const Result = ({result}) => {
+
+    const articulo = "/article/"
     return (
         <>
         <div>
@@ -23,7 +25,7 @@ const Result = ({result}) => {
                         </div>
                     </div>
                     <span className="icon is-small">
-                        <a href='/article'>
+                        <a href={"/article/" + result.document.num_articulos}>
                             <i className="fas fa-reply" aria-hidden="true"></i>
                         </a>
                     </span>

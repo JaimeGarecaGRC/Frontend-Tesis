@@ -24,7 +24,6 @@ const App = () => {
 	const initialResultState = useInitialResultState();
 	return (
 		<AppContext.Provider value={initialState}>
-		
 			<BrowserRouter>
 				<Layout>
 					<Routes>
@@ -35,7 +34,7 @@ const App = () => {
 						<Route path="document" element={ <Document/> }/>
 						<Route path="upload" element={<UploadDocument/>}/>
 						<Route path="create-article" element={<CreateDocument/>}/>
-						<Route path="article" element={<Document/>}/>
+						<Route path='article/:articleId' element={<Document/>}/>
 					</Routes>
 				</Layout>
 			</BrowserRouter>

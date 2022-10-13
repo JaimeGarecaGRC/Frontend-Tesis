@@ -12,10 +12,13 @@ const ResultSearch = () => {
 
     const [search, setSearch] = useState([]);
 
+
+
     useEffect(() => {
         async function fetchData() {
             const response = await axios('//localhost:3010/api/v1/articles/search?q=' + state);
             setSearch(response.data);
+            console.log(response.data);
         }
         fetchData();
     }, [state]);
