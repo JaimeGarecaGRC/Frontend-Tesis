@@ -13,7 +13,7 @@ const Sidebar = () => {
                     <ul>
                         <li><a href='/upload' className='is-active'>Subir Archivo</a></li>
                         <li><a href='/create-article' className='is-active'>Crear Articulo</a></li>
-                        <li><a href='/article' className='is-active'>Articulo</a></li>
+                        <li><a href='/article/41' className='is-active'>Articulo</a></li>
                         <li><a href='/results' className='is-active'>Resultados</a></li>
                     </ul>
                     </li>

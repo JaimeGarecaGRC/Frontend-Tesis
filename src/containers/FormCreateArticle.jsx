@@ -95,7 +95,7 @@ const FormCreateArticle = () => {
                         <button type="button" className="button is-link" onClick={handleSumbit}>Submit</button>
                     </div>
                     <div className="control">
-                        <button type="button"  className="button is-link is-light">Cancel</button>
+                        <button type="button"  className="button is-link is-light" onClick={() => {window.location.reload()}}>Cancel</button>
                     </div>
                 </div>
 
